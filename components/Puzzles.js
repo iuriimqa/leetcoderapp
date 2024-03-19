@@ -51,6 +51,7 @@ const AIPuzzle = () => {
   const randomTheme = random(themes);
   const randomDifficulty = random(difficulty);
   const randomType = random(types);
+  const randomNum = Math.floor(Math.random() * 10);
   const [answers,setAnswers] = useState();
 
 
@@ -96,7 +97,7 @@ const AIPuzzle = () => {
                 "difficultyLevel": ${randomDifficulty},
                 "quizFormat": ${randomType},
                 "additionalParameters": {
-                  "numberOfQuestions": 1
+                  "numberOfQuestions": ${randomNum},
                 }
             }`,
       },
