@@ -1,5 +1,5 @@
 import React from "react";
-import Apifetcher, { ApiFetcher } from "./components/Apifetcher";
+import { ApiFetcher } from "./components/ApiLeetcode.js";
 import { Example } from "./components/СodeForm";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
@@ -54,7 +54,7 @@ export default function Navigate() {
 
         <Stack.Screen
           name="Daily"
-          component={Apifetcher}
+          component={ApiFetcher}
           options={{ title: "Leetcode Task" }}
         />
 
