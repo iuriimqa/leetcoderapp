@@ -36,9 +36,9 @@ export const ApiFetcher = ({route}) => {
   const hints = () => {
     if (hint <= task.hints.length) {
       setHint(hint+1)
-      Alert.alert(`${task.hints[hint]}`);
+      alert(`${task.hints[hint]}`);
     } else {
-      Alert.alert('Sorry no more hints..');
+      alert('Sorry no more hints..');
     }
   };
 
