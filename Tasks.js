@@ -41,7 +41,7 @@ const TaskList = () => {
       const randomTask = cat[Math.floor(Math.random() * cat.length)];
       navigation.navigate("Daily", { randtask: randomTask.titleslug });
     } catch (err) {
-      Alert.alert('Task Not Found');
+      alert('Task Not Found');
     }
   };
 
