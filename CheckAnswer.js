@@ -90,8 +90,8 @@ const AIComponent = () => {
   return (
     <ScrollView>
       {isLoading && <Image
-  source={{url:'https://i.gifer.com/4Mg1.gif'}}
-  style={{ width: 380, height: 800,objectFit:'cover' }}
+  source={require('./loading.gif')}
+  style={{ width: '100%', height: '100%' }}
 />}
   
         { reslt && <Markdown value={reslt}/>}
