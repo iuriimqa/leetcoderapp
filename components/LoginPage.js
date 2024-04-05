@@ -15,8 +15,8 @@ import { useNavigation } from "@react-navigation/native";
 const LoginForm = () => {
   const navigation = useNavigation();
   
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('user@site.com');
+  const [password, setPassword] = useState('password');
   
 
   const handleSubmit = () => {
