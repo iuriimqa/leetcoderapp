@@ -34,7 +34,7 @@ export const ApiFetcher = ({route}) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const hints = () => {
-    if (hint <= task.hints.length) {
+    if (hint <= task.hints.length && task.hints[hint]!= undefined) {
       setHint(hint+1)
       alert(`${task.hints[hint]}`);
     } else {
